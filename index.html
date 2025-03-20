@@ -48,9 +48,9 @@
 
 	<body>
 		<!-- Page Preloder -->
-		<!-- <div id="preloder">
+		<div id="preloder">
 			<div class="loader"></div>
-		</div> -->
+		</div>
 
 		<div id="off-canvas"></div>
 		<div id="header"></div>
@@ -85,21 +85,34 @@
 									<h2>Consultation</h2>
 								</div>
 								<form action="#">
-									<input type="text" placeholder="Name" />
-									<input type="text" placeholder="Email" />
+									<input type="text" placeholder="Name" required />
+									<input type="email" placeholder="Email" required />
+									<input type="text" placeholder="Phone" required />
 									<div class="datepicker__item">
-										<input type="text" placeholder="Date" class="datepicker" />
+										<input
+											type="text"
+											placeholder="Date"
+											class="datepicker"
+											required
+										/>
 										<i class="fa fa-calendar"></i>
 									</div>
-									<select>
+									<textarea
+										class="form-control mb-3"
+										type="text"
+										placeholder="Reason for appointment"
+										rows="5"
+										required
+									></textarea>
+									<!-- <select>
 										<option value="">Type of service</option>
 										<option value="">Advanced equipment</option>
 										<option value="">Qualified doctors</option>
 										<option value="">Certified services</option>
 										<option value="">Emergency care</option>
-									</select>
+									</select> -->
 									<button type="submit" class="site-btn">
-										Book appoitment
+										Book appointment
 									</button>
 								</form>
 							</div>
