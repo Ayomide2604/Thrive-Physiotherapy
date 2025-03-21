@@ -2,13 +2,14 @@
 <div class="offcanvas-menu-overlay"></div>
 <div class="offcanvas-menu-wrapper">
 	<div class="offcanvas__logo" style="padding: 20px">
-		<a href="./index.html"
-			><img
+		<a href="./index.html">
+			<img
 				src="assets/img/logo.png"
 				alt="Logo"
 				class="img-fluid d-flex"
 				style="filter: contrast(1.4)"
-		/></a>
+			/>
+		</a>
 	</div>
 	<div id="mobile-menu-wrap">
 		<ul class="offcanvas__widget">
@@ -18,15 +19,117 @@
 			<li><a href="./contact.html">Contact</a></li>
 		</ul>
 	</div>
-	<!-- <div class="offcanvas__btn">
-		<a href="#" class="primary-btn">Appointment</a>
-	</div> -->
-
+	<div class="offcanvas__btn">
+		<a
+			href="#"
+			class="primary-btn"
+			data-toggle="modal"
+			data-target="#appointmentModal"
+			>Appointment</a
+		>
+	</div>
 	<div class="offcanvas__social">
-		<a href="#"><i class="fa fa-facebook"></i></a>
-		<a href="#"><i class="fa fa-twitter"></i></a>
-		<a href="#"><i class="fa fa-instagram"></i></a>
-		<a href="#"><i class="fa fa-dribbble"></i></a>
+		<a href="https://www.facebook.com" target="_blank"
+			><i class="fa fa-facebook"></i
+		></a>
+		<a href="https://www.twitter.com" target="_blank"
+			><i class="fa fa-twitter"></i
+		></a>
+		<a href="https://www.instagram.com" target="_blank"
+			><i class="fa fa-instagram"></i
+		></a>
+		<a href="https://dribbble.com" target="_blank"
+			><i class="fa fa-dribbble"></i
+		></a>
 	</div>
 </div>
 <!-- Offcanvas Menu End -->
+
+<!-- Appointment Modal -->
+<div
+	class="modal fade"
+	id="appointmentModal"
+	tabindex="-1"
+	role="dialog"
+	aria-labelledby="appointmentModalLabel"
+	aria-hidden="true"
+>
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="appointmentModalLabel">
+					Book an Appointment
+				</h5>
+				<button
+					type="button"
+					class="close"
+					data-dismiss="modal"
+					aria-label="Close"
+				>
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="consultation__form">
+					<div class="section-title">
+						<span>REQUEST FOR AN</span>
+						<h2>Appointment</h2>
+					</div>
+					<form action="#">
+						<input
+							class="form-control"
+							type="text"
+							placeholder="Name"
+							required
+						/>
+						<input
+							class="form-control"
+							type="email"
+							placeholder="Email"
+							required
+						/>
+						<input
+							class="form-control"
+							type="text"
+							placeholder="Phone"
+							required
+						/>
+						<div class="datepicker__item">
+							<input
+								type="text"
+								placeholder="Preferred Date"
+								class="datepicker"
+								required
+							/>
+							<i class="fa fa-calendar"></i>
+						</div>
+						<textarea
+							class="form-control mb-3"
+							placeholder="Reason for appointment"
+							rows="5"
+							required
+						></textarea>
+						<button type="submit" class="site-btn">Book Appointment</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- JavaScript to handle modal functionality -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script>
+	$(document).ready(function () {
+		// Initialize datepicker
+		$(".datepicker").datepicker({
+			format: "yyyy-mm-dd",
+		});
+
+		// Open modal on button click
+		$(".offcanvas__btn .primary-btn").on("click", function () {
+			$("#appointmentModal").modal("show");
+		});
+	});
+</script>
