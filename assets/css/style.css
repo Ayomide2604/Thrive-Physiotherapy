@@ -410,15 +410,9 @@ ol {
 	display: inline-block;
 }
 
+/* Off-canvas Menu Styles */
 .offcanvas-menu-wrapper {
 	display: none;
-}
-
-.canvas__open {
-	display: none;
-}
-
-.offcanvas-menu-wrapper {
 	position: fixed;
 	top: 0;
 	left: -300px; /* Start off-screen */
@@ -427,6 +421,12 @@ ol {
 	background-color: #ffffff;
 	transition: left 0.3s ease;
 	z-index: 1000;
+	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+	overflow-y: auto;
+}
+
+.canvas__open {
+	display: none;
 }
 
 .offcanvas-menu-wrapper.active {
@@ -451,22 +451,84 @@ ol {
 	opacity: 1;
 }
 
+.offcanvas__logo {
+	padding: 20px;
+	text-align: center;
+}
+
+.offcanvas__logo img {
+	max-width: 100%;
+	height: auto;
+}
+
+.offcanvas__widget {
+	list-style: none;
+	padding: 0;
+}
+
+.offcanvas__widget li {
+	margin: 15px 0;
+}
+
+.offcanvas__widget li a {
+	color: #333;
+	text-decoration: none;
+	font-size: 16px;
+	transition: color 0.3s ease;
+}
+
+.offcanvas__widget li a:hover {
+	color: #13a2b7;
+}
+
+.offcanvas__btn {
+	padding: 20px;
+	text-align: center;
+}
+
+.offcanvas__btn .primary-btn {
+	background-color: #13a2b7;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.offcanvas__btn .primary-btn:hover {
+	background-color: #0d8da0;
+}
+
+.offcanvas__social {
+	padding: 20px;
+	text-align: center;
+}
+
+.offcanvas__social a {
+	color: #333;
+	margin: 0 10px;
+	font-size: 18px;
+	transition: color 0.3s ease;
+}
+
+.offcanvas__social a:hover {
+	color: #13a2b7;
+}
+
+.consultation__form .section-title span {
+	font-size: 14px;
+	color: #13a2b7;
+}
+
+.consultation__form .section-title h2 {
+	font-size: 24px;
+	color: #333;
+}
+
 /*---------------------
   Hero
 -----------------------*/
-/* 
-.hero {
-	padding-top: 145px;
-	padding-bottom: 215px;
-}
-
-.hero__text span {
-	font-size: 15px;
-	font-weight: 500;
-	color: #13a2b7;
-	text-transform: uppercase;
-	display: block;
-}
 
 .hero__text h2 {
 	font-size: 48px;
@@ -475,9 +537,8 @@ ol {
 	line-height: 60px;
 	margin-top: 10px;
 	margin-bottom: 35px;
-} */
-
-.hero {
+}
+*/ .hero {
 	position: relative;
 	padding-top: 145px;
 	padding-bottom: 215px;

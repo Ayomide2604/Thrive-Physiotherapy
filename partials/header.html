@@ -74,10 +74,7 @@
 >
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title" id="appointmentModalLabel">
-					Book an Appointment
-				</h5>
+			<div class="consultation__form">
 				<button
 					type="button"
 					class="close"
@@ -86,50 +83,41 @@
 				>
 					<span aria-hidden="true">&times;</span>
 				</button>
-			</div>
-			<div class="modal-body">
-				<div class="consultation__form">
-					<div class="section-title">
-						<span>REQUEST FOR YOUR</span>
-						<h2>Consultation</h2>
-					</div>
-					<form action="#">
-						<input
-							class="form-control"
-							type="text"
-							placeholder="Name"
-							required
-						/>
-						<input
-							class="form-control"
-							type="email"
-							placeholder="Email"
-							required
-						/>
-						<input
-							class="form-control"
-							type="text"
-							placeholder="Phone"
-							required
-						/>
-						<div class="datepicker__item">
-							<input
-								type="text"
-								placeholder="Preferred Date"
-								class="datepicker"
-								required
-							/>
-							<i class="fa fa-calendar"></i>
-						</div>
-						<textarea
-							class="form-control mb-3"
-							placeholder="Reason for appointment"
-							rows="5"
-							required
-						></textarea>
-						<button type="submit" class="site-btn">Book Appointment</button>
-					</form>
+				<div class="section-title">
+					<span>REQUEST FOR YOUR</span>
+					<h2>Consultation</h2>
 				</div>
+				<form action="#">
+					<input class="form-control" type="text" placeholder="Name" required />
+					<input
+						class="form-control"
+						type="email"
+						placeholder="Email"
+						required
+					/>
+					<input
+						class="form-control"
+						type="text"
+						placeholder="Phone"
+						required
+					/>
+					<div class="datepicker__item">
+						<input
+							type="text"
+							placeholder="Preferred Date"
+							class="datepicker"
+							required
+						/>
+						<i class="fa fa-calendar"></i>
+					</div>
+					<textarea
+						class="form-control mb-3"
+						placeholder="Reason for appointment"
+						rows="5"
+						required
+					></textarea>
+					<button type="submit" class="site-btn">Book Appointment</button>
+				</form>
 			</div>
 		</div>
 	</div>
