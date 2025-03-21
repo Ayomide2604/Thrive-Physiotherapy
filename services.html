@@ -44,6 +44,26 @@
 		/>
 		<link rel="stylesheet" href="assets/css/slicknav.min.css" type="text/css" />
 		<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+		<style>
+			/* Style for list items with icons */
+			.services__item__text ul {
+				list-style: none;
+				padding-left: 0;
+			}
+			.services__item__text ul li {
+				position: relative;
+				padding-left: 20px;
+				margin-bottom: 10px;
+			}
+			.services__item__text ul li::before {
+				content: '\f00c'; /* FontAwesome check-circle icon */
+				font-family: 'FontAwesome';
+				position: absolute;
+				left: 0;
+				color: #13a2b7;
+				font-size: 14px;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -64,7 +84,7 @@
 			>
 				<div class="container">
 					<div class="row">
-						<div class="">
+						<div class="col-lg-12 text-center">
 							<div class="section-title">
 								<h2>Our Services</h2>
 							</div>
@@ -74,14 +94,18 @@
 						<div class="col-lg-6 col-md-6">
 							<div class="services__item">
 								<div class="services__item__icon">
-									<img src="./assets/img/services/old.svg" />
+									<img src="./assets/img/services/old.svg" alt="Geriatric Physiotherapy" />
 								</div>
 								<div class="services__item__text">
 									<h5>Geriatric Physiotherapy</h5>
 									<p>
-										Our geriatric physiotherapy services address conditions such
-										as arthritis, osteoporosis, and balance disorders, enhancing
-										mobility and quality of life for elderly patients.
+										Our geriatric physiotherapy services address conditions such as:
+										<ul>
+											<li>Arthritis</li>
+											<li>Osteoporosis</li>
+											<li>Balance disorders</li>
+										</ul>
+										Enhancing mobility and quality of life for elderly patients.
 									</p>
 								</div>
 							</div>
@@ -89,15 +113,18 @@
 						<div class="col-lg-6 col-md-6">
 							<div class="services__item">
 								<div class="services__item__icon">
-									<img src="./assets/img/services/baby.svg" />
+									<img src="./assets/img/services/baby.svg" alt="Pediatric Physiotherapy" />
 								</div>
 								<div class="services__item__text">
 									<h5>Pediatric Physiotherapy</h5>
 									<p>
-										We specialize in pediatric physiotherapy to support children
-										with conditions like cerebral palsy, developmental delays,
-										and muscular dystrophy, promoting their growth and
-										development.
+										We specialize in pediatric physiotherapy to support children with conditions like:
+										<ul>
+											<li>Cerebral palsy</li>
+											<li>Developmental delays</li>
+											<li>Muscular dystrophy</li>
+										</ul>
+										Promoting their growth and development.
 									</p>
 								</div>
 							</div>
@@ -105,15 +132,18 @@
 						<div class="col-lg-6 col-md-6">
 							<div class="services__item">
 								<div class="services__item__icon">
-									<img src="./assets/img/services/brain.svg" />
+									<img src="./assets/img/services/brain.svg" alt="Neurology" />
 								</div>
 								<div class="services__item__text">
 									<h5>Neurology</h5>
 									<p>
-										Our neurology services focus on diagnosing and treating
-										conditions such as stroke, epilepsy, and Parkinson's
-										disease, providing comprehensive care for nervous system
-										disorders.
+										Our neurology services focus on diagnosing and treating conditions such as:
+										<ul>
+											<li>Stroke</li>
+											<li>Traumatic Brain Injuries</li>
+											<li>Parkinson's disease</li>
+										</ul>
+										Providing comprehensive care for nervous system disorders.
 									</p>
 								</div>
 							</div>
@@ -121,14 +151,18 @@
 						<div class="col-lg-6 col-md-6">
 							<div class="services__item">
 								<div class="services__item__icon">
-									<img src="./assets/img/services/skeleton.svg" />
+									<img src="./assets/img/services/skeleton.svg" alt="Musculoskeletal" />
 								</div>
 								<div class="services__item__text">
 									<h5>Musculoskeletal</h5>
 									<p>
-										We offer specialized musculoskeletal services to address
-										issues like back pain, sports injuries, and joint
-										replacements, helping patients regain strength and mobility.
+										We offer specialized musculoskeletal services to address issues like:
+										<ul>
+											<li>Back pain</li>
+											<li>Sports injuries</li>
+											<li>Joint replacements</li>
+										</ul>
+										Helping patients regain strength and mobility.
 									</p>
 								</div>
 							</div>
@@ -136,14 +170,18 @@
 						<div class="col-lg-6 col-md-6">
 							<div class="services__item">
 								<div class="services__item__icon">
-									<img src="./assets/img/services/surgery.svg" />
+									<img src="./assets/img/services/surgery.svg" alt="Post Surgery Recovery" />
 								</div>
 								<div class="services__item__text">
 									<h5>Post Surgery Recovery</h5>
 									<p>
-										We offer specialized musculoskeletal services to address
-										issues like back pain, sports injuries, and joint
-										replacements, helping patients regain strength and mobility.
+										Our post-surgery recovery services focus on:
+										<ul>
+											<li>Pain management</li>
+											<li>Mobility restoration</li>
+											<li>Strength rebuilding</li>
+										</ul>
+										Ensuring a smooth and effective recovery process.
 									</p>
 								</div>
 							</div>
@@ -151,14 +189,18 @@
 						<div class="col-lg-6 col-md-6">
 							<div class="services__item">
 								<div class="services__item__icon">
-									<img src="./assets/img/services/consult.svg" />
+									<img src="./assets/img/services/consult.svg" alt="Consultation Services" />
 								</div>
 								<div class="services__item__text">
 									<h5>Consultation Services</h5>
 									<p>
-										We offer specialized musculoskeletal services to address
-										issues like back pain, sports injuries, and joint
-										replacements, helping patients regain strength and mobility.
+										Our consultation services provide:
+										<ul>
+											<li>Expert advice</li>
+											<li>Personalized treatment plans</li>
+											<li>Ongoing support</li>
+										</ul>
+										To help you achieve your health goals.
 									</p>
 								</div>
 							</div>
