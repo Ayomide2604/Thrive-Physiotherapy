@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Oncology Physiotherapy Services" />
+		<meta name="keywords" content="Oncology, Physiotherapy, Rehabilitation" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Oncology Physiotherapy | Thrive Physiotherapy</title>
+
+		<!-- Google Font -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- CSS Styles -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="assets/css/flaticon.css" />
+		<link rel="stylesheet" href="assets/css/nice-select.css" />
+		<link rel="stylesheet" href="assets/css/jquery-ui.min.css" />
+		<link rel="stylesheet" href="assets/css/magnific-popup.css" />
+		<link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+		<link rel="stylesheet" href="assets/css/slicknav.min.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Page Preloader -->
+		<div id="preloader">
+			<div class="loader"></div>
+		</div>
+
+		<div id="off-canvas"></div>
+		<div id="header"></div>
+
+		<!-- Main Content -->
+		<main>
+			<!-- Service Detail Section Begin -->
+
+			<div class="col-lg-12 service-detail__cta text-left p-3">
+				<a href="/services.html" class="site-btn">Back to Services</a>
+			</div>
+			<section class="service-detail spad">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="section-title">
+								<h2>Oncology Physiotherapy</h2>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="service-detail__img mb-5">
+								<img
+									src="./assets/img/services/oncology.jpg"
+									alt="Oncology Physiotherapy"
+								/>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="service-detail__text">
+								<p>
+									Diagnosis of cancer and undergoing treatment can be a
+									stressful time. Cancer treatment affects strength, stamina,
+									mobility, and function. Evidence suggests that rehabilitation
+									should start as soon as possible and continue to achieve
+									better outcomes with reduced healing times.
+								</p>
+								<p>
+									We provide a holistic rehabilitation program aimed at
+									enhancing stamina and functional abilities. Our team consists
+									of highly competent physiotherapists who provide treatment
+									based on current evidence. Let us help you get back to living
+									a quality life.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-12 service-detail__text">
+							<h4>Key Features:</h4>
+							<ul>
+								<li>
+									Personalized treatment plans tailored to individual needs
+								</li>
+								<li>
+									Exercises to improve strength, flexibility, and mobility
+								</li>
+								<li>Pain management techniques to alleviate discomfort</li>
+								<li>Fatigue management strategies to enhance energy levels</li>
+								<li>Emotional support and counseling to cope with stress</li>
+								<li>
+									Education on self-management techniques for ongoing care
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-12 service-detail__text">
+							<p>
+								At Thrive Physiotherapy, we are committed to providing
+								compassionate and expert care to help our patients achieve their
+								rehabilitation goals. Our team works closely with each patient
+								to develop a customized treatment plan that addresses their
+								specific needs and challenges.
+							</p>
+						</div>
+						<div class="col-lg-12 service-detail__cta">
+							<a href="./contact.html">Book an Appointment</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Service Detail Section End -->
+		</main>
+
+		<!-- Floating WhatsApp Chat Box -->
+		<div class="whatsapp-chat-box" id="whatsappChatBox">
+			<div class="whatsapp-chat-header">
+				<i class="fa fa-whatsapp"></i> Chat with us on WhatsApp
+				<span class="close-btn" id="closeChatBox">&times;</span>
+			</div>
+			<div class="whatsapp-chat-body">
+				<input
+					type="text"
+					id="whatsappMessage"
+					placeholder="Type your message..."
+				/>
+				<button id="sendWhatsappMessage">Send</button>
+			</div>
+		</div>
+
+		<!-- Floating WhatsApp Icon to open the chat box -->
+		<div class="whatsapp-float" id="whatsappFloat">
+			<i class="fa fa-whatsapp"></i>
+		</div>
+
+		<!-- Footer -->
+		<div id="footer"></div>
+
+		<!-- JS Plugins -->
+		<script src="assets/js/jquery-3.3.1.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/jquery.magnific-popup.min.js"></script>
+		<script src="assets/js/masonry.pkgd.min.js"></script>
+		<script src="assets/js/jquery-ui.min.js"></script>
+		<script src="assets/js/jquery.nice-select.min.js"></script>
+		<script src="assets/js/jquery.slicknav.js"></script>
+		<script src="assets/js/owl.carousel.min.js"></script>
+		<script src="assets/js/main.js"></script>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				// Dynamically load header content
+				fetch("partials/header.html")
+					.then((response) => response.text())
+					.then((data) => {
+						document.getElementById("header").innerHTML = data;
+						// Initialize off-canvas menu after header is loaded
+						initOffCanvasMenu();
+					});
+				fetch("partials/footer.html")
+					.then((response) => response.text())
+					.then((data) => {
+						document.getElementById("footer").innerHTML = data;
+						// Initialize off-canvas menu after header is loaded
+						initOffCanvasMenu();
+					});
+
+				// Dynamically load off-canvas content
+				fetch("partials/offcanvas.html")
+					.then((response) => response.text())
+					.then((data) => {
+						document.getElementById("off-canvas").innerHTML = data;
+						// Initialize off-canvas menu after off-canvas is loaded
+						initOffCanvasMenu();
+					});
+
+				function initOffCanvasMenu() {
+					// Add your off-canvas menu initialization code here
+					const canvasOpen = document.querySelector(".canvas__open");
+					const offCanvasMenu = document.querySelector(
+						".offcanvas-menu-wrapper"
+					);
+					const offCanvasOverlay = document.querySelector(
+						".offcanvas-menu-overlay"
+					);
+
+					if (canvasOpen && offCanvasMenu && offCanvasOverlay) {
+						canvasOpen.addEventListener("click", () => {
+							offCanvasMenu.classList.add("active");
+							offCanvasOverlay.classList.add("active");
+						});
+
+						offCanvasOverlay.addEventListener("click", () => {
+							offCanvasMenu.classList.remove("active");
+							offCanvasOverlay.classList.remove("active");
+						});
+					} else {
+						console.error("Off-canvas menu elements not found.");
+					}
+				}
+			});
+		</script>
+	</body>
+</html>
