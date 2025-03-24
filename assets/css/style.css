@@ -1439,7 +1439,7 @@ ol {
 }
 
 .about__video {
-	height: 366px;
+	/* height: 366px; */
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
