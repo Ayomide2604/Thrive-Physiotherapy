@@ -23,33 +23,41 @@
 		<!-- Css Styles -->
 		<link
 			rel="stylesheet"
-			href="assets/css/bootstrap.min.css"
+			href="./assets/css/bootstrap.min.css"
 			type="text/css"
 		/>
 		<link
 			rel="stylesheet"
-			href="assets/css/font-awesome.min.css"
+			href="./assets/css/font-awesome.min.css"
 			type="text/css"
 		/>
-		<link rel="stylesheet" href="assets/css/flaticon.css" type="text/css" />
-		<link rel="stylesheet" href="assets/css/nice-select.css" type="text/css" />
+		<link rel="stylesheet" href="./assets/css/flaticon.css" type="text/css" />
 		<link
 			rel="stylesheet"
-			href="assets/css/jquery-ui.min.css"
-			type="text/css"
-		/>
-		<link
-			rel="stylesheet"
-			href="assets/css/magnific-popup.css"
+			href="./assets/css/nice-select.css"
 			type="text/css"
 		/>
 		<link
 			rel="stylesheet"
-			href="assets/css/owl.carousel.min.css"
+			href="./assets/css/jquery-ui.min.css"
 			type="text/css"
 		/>
-		<link rel="stylesheet" href="assets/css/slicknav.min.css" type="text/css" />
-		<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+		<link
+			rel="stylesheet"
+			href="./assets/css/magnific-popup.css"
+			type="text/css"
+		/>
+		<link
+			rel="stylesheet"
+			href="./assets/css/owl.carousel.min.css"
+			type="text/css"
+		/>
+		<link
+			rel="stylesheet"
+			href="./assets/css/slicknav.min.css"
+			type="text/css"
+		/>
+		<link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
 	</head>
 
 	<body>
@@ -163,7 +171,7 @@
 										</h5>
 										<div
 											class="consultation__video set-bg"
-											data-setbg="assets/img/consultation_video.jpg"
+											data-setbg="./assets/img/consultation_video.jpg"
 										>
 											<a
 												href="https://www.youtube.com/watch?v=DVvhOkRwdmQ"
@@ -195,7 +203,7 @@
 						<div class="col-lg-4 col-md-6 col-sm-6">
 							<div class="chooseus__item">
 								<img
-									src="assets/img/icons/physiotherapist.svg"
+									src="./assets/img/icons/physiotherapist.svg"
 									alt="Qualified Physiotherapists"
 								/>
 								<h5 style="color: #13a2b7">Qualified Physiotherapists</h5>
@@ -208,7 +216,7 @@
 						<div class="col-lg-4 col-md-6 col-sm-6">
 							<div class="chooseus__item">
 								<img
-									src="assets/img/icons/certified.svg"
+									src="./assets/img/icons/certified.svg"
 									alt="Certified Services"
 								/>
 								<h5 style="color: #13a2b7">Certified Services</h5>
@@ -220,7 +228,7 @@
 						</div>
 						<div class="col-lg-4 col-md-6 col-sm-6">
 							<div class="chooseus__item">
-								<img src="assets/img/icons/homecare.svg" alt="Home Care" />
+								<img src="./assets/img/icons/homecare.svg" alt="Home Care" />
 								<h5 style="color: #13a2b7">Home Care</h5>
 								<p>
 									Experience the convenience of professional physiotherapy
@@ -260,27 +268,27 @@
 		<div id="footer"></div>
 
 		<!-- Js Plugins -->
-		<script src="assets/js/jquery-3.3.1.min.js"></script>
-		<script src="assets/js/bootstrap.min.js"></script>
-		<script src="assets/js/jquery.magnific-popup.min.js"></script>
-		<script src="assets/js/masonry.pkgd.min.js"></script>
-		<script src="assets/js/jquery-ui.min.js"></script>
-		<script src="assets/js/jquery.nice-select.min.js"></script>
-		<script src="assets/js/jquery.slicknav.js"></script>
-		<script src="assets/js/owl.carousel.min.js"></script>
-		<script src="assets/js/main.js"></script>
+		<script src="./assets/js/jquery-3.3.1.min.js"></script>
+		<script src="./assets/js/bootstrap.min.js"></script>
+		<script src="./assets/js/jquery.magnific-popup.min.js"></script>
+		<script src="./assets/js/masonry.pkgd.min.js"></script>
+		<script src="./assets/js/jquery-ui.min.js"></script>
+		<script src="./assets/js/jquery.nice-select.min.js"></script>
+		<script src="./assets/js/jquery.slicknav.js"></script>
+		<script src="./assets/js/owl.carousel.min.js"></script>
+		<script src="./assets/js/main.js"></script>
 
 		<script>
 			document.addEventListener("DOMContentLoaded", function () {
 				// Dynamically load header content
-				fetch("partials/header.html")
+				fetch("./partials/header.html")
 					.then((response) => response.text())
 					.then((data) => {
 						document.getElementById("header").innerHTML = data;
 						// Initialize off-canvas menu after header is loaded
 						initOffCanvasMenu();
 					});
-				fetch("partials/footer.html")
+				fetch("./partials/footer.html")
 					.then((response) => response.text())
 					.then((data) => {
 						document.getElementById("footer").innerHTML = data;
@@ -289,7 +297,7 @@
 					});
 
 				// Dynamically load off-canvas content
-				fetch("partials/offcanvas.html")
+				fetch("./partials/offcanvas.html")
 					.then((response) => response.text())
 					.then((data) => {
 						document.getElementById("off-canvas").innerHTML = data;
