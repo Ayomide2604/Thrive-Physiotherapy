@@ -410,6 +410,21 @@ ol {
 	display: inline-block;
 }
 
+.header__logo img {
+	transform: scale(1.5);
+	transform-origin: center;
+}
+
+@media (max-width: 768px) {
+	.header__logo img {
+		transform: scale(1); /* Adjust the scale as needed */
+		margin-left: 0; /* Ensure it's aligned to the left */
+	}
+	.header__logo {
+		text-align: left; /* Align the container to the left */
+	}
+}
+
 /* Off-canvas Menu Styles */
 .offcanvas-menu-wrapper {
 	display: none;
