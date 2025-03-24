@@ -224,5 +224,34 @@
 				}
 			});
 		</script>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const whatsappFloat = document.getElementById("whatsappFloat");
+				const whatsappChatBox = document.getElementById("whatsappChatBox");
+				const closeChatBox = document.getElementById("closeChatBox");
+				const sendWhatsappMessage = document.getElementById(
+					"sendWhatsappMessage"
+				);
+				const whatsappMessage = document.getElementById("whatsappMessage");
+				const phoneNumber = "+2348053165091"; // Replace with your phone number
+
+				whatsappFloat.addEventListener("click", function () {
+					whatsappChatBox.style.display = "block";
+				});
+
+				closeChatBox.addEventListener("click", function () {
+					whatsappChatBox.style.display = "none";
+				});
+
+				sendWhatsappMessage.addEventListener("click", function () {
+					const message = whatsappMessage.value;
+					const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+						message
+					)}`;
+					window.open(whatsappURL, "_blank");
+				});
+			});
+		</script>
 	</body>
 </html>
