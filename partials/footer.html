@@ -7,14 +7,18 @@
 					<h5>Company</h5>
 					<ul>
 						<li><a href="#">About Us</a></li>
+						<li><a href="#">Our Mission</a></li>
+						<li><a href="#">Careers</a></li>
 					</ul>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-3 col-sm-6">
 				<div class="footer__widget">
-					<h5>Quick links</h5>
+					<h5>Quick Links</h5>
 					<ul>
-						<li><a href="#">Contact Us </a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">FAQs</a></li>
+						<li><a href="#">Blog</a></li>
 					</ul>
 				</div>
 			</div>
@@ -22,9 +26,15 @@
 				<div class="footer__address">
 					<h5>Contact Us</h5>
 					<ul>
-						<li><i class="fa fa-phone"></i> (+234) 812 666 0484</li>
 						<li>
-							<i class="fa fa-envelope"></i> Thrivephysiotherapy@gmail.com
+							<i class="fa fa-phone"></i>
+							<a style="color: white;" href="tel:+2348053165091">+(234) 805 316 5091</a>
+						</li>
+						<li>
+							<i class="fa fa-envelope"></i>
+							<a style="color: white;" href="mailto:Thrivephysiotherapy@gmail.com"
+								>Thrivephysiotherapy@gmail.com</a
+							>
 						</li>
 					</ul>
 				</div>
@@ -37,11 +47,8 @@
 				<div class="col-lg-7">
 					<div class="footer__copyright__text">
 						<p>
-							Copyright &copy;
-							<script>
-								document.write(new Date().getFullYear());
-							</script>
-							Thrive Physiotherapy. All rights reserved.
+							&copy; <span id="currentYear"></span> Thrive Physiotherapy. All
+							rights reserved.
 						</p>
 					</div>
 				</div>
@@ -57,3 +64,7 @@
 	</div>
 </footer>
 <!-- Footer Section End -->
+
+<script>
+	document.getElementById("currentYear").innerText = new Date().getFullYear();
+</script>
